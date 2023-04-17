@@ -5,7 +5,7 @@ import {Footer} from "@/components/footer";
 import {Next_body} from "@/components/next-body";
 import {Vercel} from "@/components/vercel";
 
-Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
