@@ -1,11 +1,9 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import {Footer} from "@/components/footer";
 import {Next_body} from "@/components/next-body";
 import {Vercel} from "@/components/vercel";
-
-const inter = Inter({subsets: ['latin']})
+import Headline from "@/components/headline";
 
 export default function Home() {
   return (
@@ -18,10 +16,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
+          <Headline page="index" />
           <Vercel />
         </div>
         <Next_body />
