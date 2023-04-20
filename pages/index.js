@@ -16,7 +16,11 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <Headline page="index" />
+          <Headline
+            page="index"
+            code={<code className={styles.code}>pages/about.js</code>}
+            onClick={() => alert("hoge!")}
+          />
           <Vercel />
         </div>
         <Next_body />

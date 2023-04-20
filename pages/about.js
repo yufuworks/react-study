@@ -16,7 +16,15 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <Headline page="about" />
+          <Headline
+            page="about"
+            number={1234}
+            array={[1, 2, 3, 4]}
+            obj={{ foo: "foo.", bar: "bar." }}
+            is_true={true}
+            boolean
+            code={<code className={styles.code}>pages/about.js</code>}
+          />
           <Vercel />
         </div>
         <Next_body />
