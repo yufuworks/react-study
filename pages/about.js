@@ -23,8 +23,9 @@ export default function Home() {
             obj={{ foo: "foo.", bar: "bar." }}
             is_true={true}
             boolean
-            code={<code className={styles.code}>pages/about.js</code>}
-          />
+          >
+            <code className={styles.code}>pages/about.js</code>
+          </Headline>
           <Vercel />
         </div>
         <Next_body />

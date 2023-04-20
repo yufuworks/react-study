@@ -18,9 +18,14 @@ export default function Home() {
         <div className={styles.description}>
           <Headline
             page="index"
-            code={<code className={styles.code}>pages/about.js</code>}
             onClick={() => alert("hoge!")}
-          />
+          >
+            {/*
+            コンポーネント開始/終了タグの間に何かを記述すると children として渡すことができる
+            コンポーネントを渡す場合に一つだけの場合 children として渡すことが多い
+            */}
+            <code className={styles.code}>pages/about.js</code>
+          </Headline>
           <Vercel />
         </div>
         <Next_body />
