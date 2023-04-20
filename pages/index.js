@@ -1,9 +1,5 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-import {Footer} from "@/components/footer";
-import {Next_body} from "@/components/next-body";
-import {Vercel} from "@/components/vercel";
-import {Headline} from "@/components/headline";
+import {Main} from "@/components/main";
 
 export default function Home() {
   return (
@@ -14,23 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <Headline
-            page="index"
-            onClick={() => alert("hoge!")}
-          >
-            {/*
-            コンポーネント開始/終了タグの間に何かを記述すると children として渡すことができる
-            コンポーネントを渡す場合に一つだけの場合 children として渡すことが多い
-            */}
-            <code className={styles.code}>pages/about.js</code>
-          </Headline>
-          <Vercel />
-        </div>
-        <Next_body />
-        <Footer />
-      </main>
+      <Main page={"index"} />
     </>
   )
 }
