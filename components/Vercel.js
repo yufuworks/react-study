@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '@/styles/Home.module.css'
+import classes from './Vercel.module.css'
 
 export function Vercel() {
   return (
@@ -13,7 +13,7 @@ export function Vercel() {
         <Image
           src="/vercel.svg"
           alt="Vercel Logo"
-          className={styles.vercelLogo}
+          className={classes.vercelLogo}
           width={100}
           height={24}
           priority
