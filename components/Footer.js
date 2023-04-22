@@ -26,9 +26,10 @@ const ITEMS = [
 ]
 
 export function Footer() {
-  return (
-    <div className={classes.grid}>
-      {ITEMS.map(item => {
+  const items = [];
+  for (let i = 0; i < 3; i++) {
+    items.push(
+      ITEMS.map(item => {
         return (
           <a
             key={item.title}
@@ -38,14 +39,19 @@ export function Footer() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              {item.title} <span>-&gt;</span>
+              {item.title} {i+1}<span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               {item.description}
             </p>
           </a>
         )
-      })}
+      })
+    )
+  }
+  return (
+    <div className={classes.grid}>
+      {items}
     </div>
   )
 }
