@@ -1,8 +1,8 @@
 import classes from './Main.module.css'
-import {Footer} from "@/components/Footer";
-import {Next_body} from "@/components/Next-body";
-import {Vercel} from "@/components/Vercel";
-import {Headline} from "@/components/Headline";
+import {Footer} from "@/src/components/Footer";
+import {Next_body} from "@/src/components/Next-body";
+import {Vercel} from "@/src/components/Vercel";
+import {Headline} from "@/src/components/Headline";
 
 export function Main(props) {
   return (
